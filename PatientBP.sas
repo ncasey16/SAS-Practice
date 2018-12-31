@@ -1,5 +1,5 @@
 Data Patients;
-	Infile '/folders/myfolders/PtBP.txt';
+	Infile '/folders/myfolders/PtBP.txt'; *pulls data file by computer; 
 	Input Name $ Gender $ Age Weight SysBP DiaBP;
 Run;
 proc print data=patients;
