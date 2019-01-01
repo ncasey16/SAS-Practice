@@ -18,3 +18,18 @@ run;
 	*new_varaible=expression/old variable; 
 	*new_variable must be valid SAS name; 
 	*totalamarks is example of new_variable 
+DATA grades; 
+	input subj 1-4 name $ 5-23 wage $ days $;
+	Totalsalary= wage*days; *formula for auto conversion;
+	Datalines;
+1011 Alia        Bhatt 2100 65
+1012 Maria       Smith 1278 82
+1111 Thomas      Jones 2588 81
+1121 Benedictine Methew 2868 82
+1301 Trisha      White 1151 99
+;
+Run; 
+proc print data=grades;
+		title "Internship Salary by Auto Conversion";
+	var name wage days totalsalary;
+run;
