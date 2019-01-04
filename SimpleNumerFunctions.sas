@@ -17,7 +17,7 @@ Proc print data=grades;
 run; 
 	*new_varaible=expression/old variable; 
 	*new_variable must be valid SAS name; 
-	*totalamarks is example of new_variable 
+	*totalamarks is example of new_variable; 
 DATA grades; 
 	input subj 1-4 name $ 5-23 wage $ days $;
 	Totalsalary= wage*days; *formula for auto conversion;
