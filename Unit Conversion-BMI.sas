@@ -23,5 +23,5 @@ Data BodyMass;
 Run;
 
 Proc print data=BodyMass;
-	Title 'Weight Lose Program';
+	Title 'Weight Loss Program';
 Run; 	
